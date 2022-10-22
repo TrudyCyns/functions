@@ -1,0 +1,116 @@
+[debug] [2022-10-22T08:55:35.273Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T08:55:35.277Z] Command:       /home/tru/.nvm/versions/node/v18.6.0/bin/node /home/tru/.nvm/versions/node/v18.6.0/bin/firebase emulators:start --only functions
+[debug] [2022-10-22T08:55:35.278Z] CLI Version:   11.14.4
+[debug] [2022-10-22T08:55:35.278Z] Platform:      linux
+[debug] [2022-10-22T08:55:35.278Z] Node Version:  v18.6.0
+[debug] [2022-10-22T08:55:35.279Z] Time:          Sat Oct 22 2022 11:55:35 GMT+0300 (East Africa Time)
+[debug] [2022-10-22T08:55:35.279Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T08:55:35.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T08:55:35.446Z] > authorizing via signed-in user (projecttrivy@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-10-22T08:55:35.463Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T08:55:35.464Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":7000},{"address":"::1","family":"IPv6","port":7000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-22T08:55:35.476Z] [hub] writing locator at /tmp/hub-dev-test-2ff92.json
+[debug] [2022-10-22T08:55:35.525Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T08:55:35.526Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T08:55:35.527Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":7000},{"address":"::1","family":"IPv6","port":7000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-10-22T08:55:35.558Z] defaultcredentials: writing to file /home/tru/.config/firebase/projecttrivy_gmail_com_application_default_credentials.json
+[debug] [2022-10-22T08:55:35.640Z] Setting GAC to /home/tru/.config/firebase/projecttrivy_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/tru/.config/firebase/projecttrivy_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-22T08:55:35.648Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dev-test-2ff92/adminSdkConfig [none]
+[debug] [2022-10-22T08:55:36.771Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dev-test-2ff92/adminSdkConfig 200
+[debug] [2022-10-22T08:55:36.771Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dev-test-2ff92/adminSdkConfig {"projectId":"dev-test-2ff92","storageBucket":"dev-test-2ff92.appspot.com","locationId":"us-central"}
+[debug] [2022-10-22T08:55:36.908Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-22T08:55:36.909Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-22T08:55:36.909Z] Starting Emulator UI with command {"binary":"node","args":["/home/tru/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/tru/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-22T08:55:37.243Z] Web / API server started at 127.0.0.1:7000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:7000\n"}}
+[debug] [2022-10-22T08:55:37.244Z] Web / API server started at ::1:7000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:7000\n"}}
+[info] i  functions: Watching "/home/tru/Documents/Meta/dev-test/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/tru/Documents/Meta/dev-test/functions\" for Cloud Functions..."}}
+[debug] [2022-10-22T08:55:37.450Z] Validating nodejs source
+[debug] [2022-10-22T08:55:40.833Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T08:55:40.833Z] Building nodejs source
+[debug] [2022-10-22T08:55:40.834Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T08:55:40.839Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T08:55:41.223Z] Serving at port 9005
+
+[debug] [2022-10-22T08:55:41.587Z] Got response from /__/functions.yaml {"endpoints":{"setWebhook":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"setWebhook"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T08:55:41.602Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: setWebhook. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: setWebhook."}}
+[info] ✔  functions[us-central1-setWebhook]: http function initialized (http://127.0.0.1:5001/dev-test-2ff92/us-central1/setWebhook). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/dev-test-2ff92/us-central1/setWebhook)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:7000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:7000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-22T08:56:09.417Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T08:56:09.421Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T08:56:09.422Z] Accepted request GET /dev-test-2ff92/us-central1/setWebhook --> us-central1-setWebhook
+[debug] [2022-10-22T08:56:09.424Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T08:56:09.426Z] [functions] Got req.url=/dev-test-2ff92/us-central1/setWebhook, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/dev-test-2ff92/us-central1/setWebhook, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-22T08:56:09.484Z] [worker-pool] addWorker(us-central1-setWebhook) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-setWebhook)"}}
+[debug] [2022-10-22T08:56:09.486Z] [worker-pool] Adding worker with key us-central1-setWebhook, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-setWebhook, total=1"}}
+[debug] [2022-10-22T08:56:11.200Z] [runtime-status] [206903] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.201Z] [runtime-status] [206903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.204Z] [runtime-status] [206903] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-22T08:56:11.207Z] [runtime-status] [206903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.476Z] [runtime-status] [206903] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-22T08:56:11.477Z] [runtime-status] [206903] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.0.1","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-10-22T08:56:11.478Z] [runtime-status] [206903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.482Z] [runtime-status] [206903] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.485Z] [runtime-status] [206903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.0.1","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.0.1\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-10-22T08:56:11.485Z] [runtime-status] [206903] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/tru/Documents/Meta/dev-test/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-22T08:56:11.489Z] [runtime-status] [206903] initializeApp(DEFAULT) {"storageBucket":"dev-test-2ff92.appspot.com","projectId":"dev-test-2ff92"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] initializeApp(DEFAULT) {\"storageBucket\":\"dev-test-2ff92.appspot.com\",\"projectId\":\"dev-test-2ff92\"}"}}
+[debug] [2022-10-22T08:56:11.637Z] [runtime-status] [206903] Functions runtime initialized. {"cwd":"/home/tru/Documents/Meta/dev-test/functions","node_version":"18.6.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Functions runtime initialized. {\"cwd\":\"/home/tru/Documents/Meta/dev-test/functions\",\"node_version\":\"18.6.0\"}"}}
+[debug] [2022-10-22T08:56:11.637Z] [runtime-status] [206903] Listening to port: /tmp/fire_emu_14aa4c4daa75eb38.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"[runtime-status] [206903] Listening to port: /tmp/fire_emu_14aa4c4daa75eb38.sock"}}
+[debug] [2022-10-22T08:56:11.741Z] [worker-pool] submitRequest(triggerId=us-central1-setWebhook) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-setWebhook)"}}
+[debug] [2022-10-22T08:56:11.742Z] [worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: BUSY"}}
+[info] i  functions: Beginning execution of "setWebhook" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"Beginning execution of \"setWebhook\""}}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-setWebhook"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-10-22T08:57:11.779Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T08:57:11.784Z] [worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: exited"}}
+[debug] [2022-10-22T08:57:11.785Z] [worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-setWebhook-15652a5d-7545-49fe-8029-fdf02532ca17]: FINISHED"}}
